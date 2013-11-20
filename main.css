@@ -1,0 +1,29 @@
+/*=============================================
+Stricly what is needed to make the image switch
+===============================================*/
+.logo--narrow {
+    display:block;
+}
+.logo--normal {
+    display:none;
+}
+
+.logo--wide {
+    display:none;
+}
+@media (min-width: 31.25em) {
+    .logo--narrow {
+        display:none;
+    }
+    .logo--normal {
+        display:block;
+    }
+}
+@media (min-width: 48.75em) {
+    .logo--normal {
+        display:none;
+    }
+    .logo--wide {
+        display:block;
+    }
+}
